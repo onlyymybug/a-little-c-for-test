@@ -1,0 +1,59 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    char num[22];
+    scanf("%s",num+1);
+    int each[10]={0},add=0;
+    num[0]='0';
+    char*p=num+1,*begin=num;
+    for(;*p!='\0';)
+    {
+        each[*p-'0']++;
+        p++;
+    }
+    p--;
+    for(;p!=begin;)
+    {
+        *p+=(*p-'0')+add;
+        if(*p>'9')
+        {
+            *p-=10;
+            add=1;
+        }
+        else
+        {
+            add=0;
+        }
+        p--;
+    }
+    *p+=(*p-'0')+add;//此时p指在num[0]
+    if(*p=='0')
+    {
+        p++;
+    }
+    for(;*p!='\0';)
+    {
+        each[*p-'0']--;
+        p++;
+    }
+    for(int i=0;i<10;i++)
+    {
+        if(each[i]!=0)
+        {
+            printf("No\n");
+            break;
+        }
+        if(i==9&&each[i]==0)
+        {
+            printf("Yes\n");
+            break;
+        }
+    }
+    if(num[0]!='0')
+    printf("%s\n",num);
+    else
+    printf("%s\n",num+1);
+    system("pause");
+    return 0;
+}
