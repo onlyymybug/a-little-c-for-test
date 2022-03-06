@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+//使用了动态数组
 int main()
 {
     int n,m;
