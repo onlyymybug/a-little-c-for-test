@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 //使用了动态数组
+//部分测试点无法通过但理论正确
 int main()
 {
     int n,m;
