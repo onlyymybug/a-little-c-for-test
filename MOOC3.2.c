@@ -2,7 +2,6 @@
 #include<stdlib.h>
 //使用了动态数组
 //部分测试点无法通过但理论正确
-//这句话是一个测试
 int main()
 {
     int n,m;
