@@ -1,7 +1,6 @@
 #include<stdlib.h>
 #include<stdio.h>
 #include<string.h>
-//Õâ¾ä×¢ÊÍÓÃÓÚ²âÊÔ
 int main()
 {
     int K;
