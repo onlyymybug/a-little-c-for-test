@@ -1,3 +1,13 @@
+//打印沙漏
+//input  19 *
+//output
+//*****
+// ***
+//  *
+// ***
+//*****
+//2
+//(此处2是剩余的符号个数)
 #include<stdlib.h>
 #include<stdio.h>
 int main()

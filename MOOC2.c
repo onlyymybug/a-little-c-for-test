@@ -1,3 +1,6 @@
+//input N  eg. 20
+//output 不超过N的满足素数对猜想的素数个数 eg. 4
+//素数对猜想：存在无穷多对相邻且差为2的素数
 #include<stdio.h>
 #include<stdlib.h>
 #define MAX 10000
